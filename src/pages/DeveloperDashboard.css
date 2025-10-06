@@ -1,0 +1,370 @@
+
+.developer-dashboard {
+  padding: 8rem 2rem 4rem;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+.dashboard-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.dashboard-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.dashboard-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  padding: 0.5rem;
+  backdrop-filter: blur(10px);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tab-button {
+  padding: 12px 30px;
+  border: none;
+  background: transparent;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.tab-button.active {
+  background: white;
+  color: #667eea;
+}
+
+.tab-button:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.tab-content {
+  background: white;
+  border-radius: 15px;
+  padding: 3rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.api-card {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.api-card h3 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.api-status {
+  margin-bottom: 2rem;
+}
+
+.status-badge {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.status-badge.pending {
+  background: #f39c12;
+  color: white;
+}
+
+.status-badge.approved {
+  background: #27ae60;
+  color: white;
+}
+
+.api-request {
+  text-align: center;
+  padding: 2rem;
+  border: 2px dashed #bdc3c7;
+  border-radius: 10px;
+}
+
+.api-request p {
+  color: #7f8c8d;
+  margin-bottom: 1.5rem;
+}
+
+.request-btn {
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.request-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
+}
+
+.api-key-display {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #e9ecef;
+}
+
+.api-key-info label {
+  display: block;
+  color: #2c3e50;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.api-key-value {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.api-key-value code {
+  background: #2c3e50;
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.copy-btn {
+  background: #95a5a6;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.copy-btn:hover {
+  background: #7f8c8d;
+}
+
+.api-usage h4 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.api-usage ul {
+  list-style: none;
+  padding: 0;
+}
+
+.api-usage li {
+  padding: 0.5rem 0;
+  color: #34495e;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.api-usage li:last-child {
+  border-bottom: none;
+}
+
+.api-usage code {
+  background: #ecf0f1;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  color: #e74c3c;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #e9ecef;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.project-header h4 {
+  color: #2c3e50;
+  margin: 0;
+}
+
+.access-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.access-badge.full {
+  background: #27ae60;
+  color: white;
+}
+
+.access-badge.restricted {
+  background: #f39c12;
+  color: white;
+}
+
+.project-description {
+  color: #7f8c8d;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.project-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.access-btn, .docs-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.access-btn {
+  background: #3498db;
+  color: white;
+  flex: 1;
+}
+
+.docs-btn {
+  background: transparent;
+  border: 1px solid #3498db;
+  color: #3498db;
+}
+
+.access-btn:hover {
+  background: #2980b9;
+}
+
+.docs-btn:hover {
+  background: #3498db;
+  color: white;
+}
+
+.documentation-section h3 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.docs-content {
+  display: grid;
+  gap: 2rem;
+}
+
+.docs-card {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  border-left: 4px solid #3498db;
+}
+
+.docs-card h4 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.docs-card pre {
+  background: #2c3e50;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+}
+
+.docs-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.docs-card li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #ecf0f1;
+  color: #34495e;
+}
+
+.docs-card li:last-child {
+  border-bottom: none;
+}
+
+.docs-card strong {
+  color: #2c3e50;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .developer-dashboard {
+    padding: 6rem 1rem 2rem;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .dashboard-tabs {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .tab-content {
+    padding: 1.5rem;
+  }
+  
+  .api-key-value {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .project-actions {
+    flex-direction: column;
+  }
+}
