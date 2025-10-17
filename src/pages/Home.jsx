@@ -74,7 +74,7 @@ const Home = () => {
           <div className="photo-container">
             <div className="photo-frame">
               <img 
-                src="../src/assets/images/jackson.png" 
+                src="../src/assets/images/JACKSON1.png" 
                 alt="Jackson - Full Stack Developer" 
                 className="developer-photo"
                 onError={handleImageError}

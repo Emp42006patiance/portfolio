@@ -2,10 +2,13 @@
   "name": "portfolior",
   "version": "1.0.0",
   "type": "module",
+  "homepage": "https://Emp42006patiance.github.io/portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -14,6 +17,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.3",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "gh-pages": "^5.0.0"
   }
 }
